@@ -1,0 +1,12 @@
+{
+  "variables": [
+    {
+      "name": "API_KEY",
+      "type": "string"
+    },
+    {
+      "name": "CONFIG_ID",
+      "type": "string"
+    }
+  ]
+}

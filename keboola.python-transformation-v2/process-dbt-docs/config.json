@@ -1,0 +1,50 @@
+{
+  "parameters": {
+    "packages": [
+      "git+https://github.com/re-data/re-cloud-client",
+      "dbt-core"
+    ]
+  },
+  "runtime": {
+    "backend": {
+      "type": "xsmall"
+    }
+  },
+  "storage": {
+    "input": {
+      "files": [
+        {
+          "source": {
+            "tags": [
+              {
+                "name": "branchId-default"
+              },
+              {
+                "name": "componentId-keboola.dbt-transformation"
+              },
+              {
+                "name": "configId-474852761"
+              }
+            ]
+          },
+          "limit": 1,
+          "query": "NOT tags:\"index.html\""
+        }
+      ]
+    },
+    "output": {
+      "files": [
+        {
+          "source": "index.html",
+          "tags": [
+            "branchId-default",
+            "componentId-keboola.dbt-transformation",
+            "configId-474852761",
+            "dbt_docs",
+            "index.html"
+          ]
+        }
+      ]
+    }
+  }
+}
